@@ -1,4 +1,6 @@
 x = input('entrer x :')
 y = input('entrer y :')
 z = int(x)*int(y)
+t = int(x) - int(y)
 print('le produit de x par y est : {}'.format(z))
+print('la différence entre x et y est : {}'.format(t))
