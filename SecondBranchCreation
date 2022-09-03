@@ -30,3 +30,65 @@ bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git branch -a
   remotes/origin/branch2
   remotes/origin/main
 bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$  git pull origin master
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: couldn't find remote ref master
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git pull origin  main
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 2.44 KiB | 1.22 MiB/s, done.
+From https://github.com/bechirbendaya/rep2
+ * branch            main       -> FETCH_HEAD
+   086bbc0..7ee7ae2  main       -> origin/main
+Updating 086bbc0..7ee7ae2
+Fast-forward
+ SecondBranchCreation | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+ create mode 100644 SecondBranchCreation
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git branch --merged
+* main
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git merge branch2  
+Merge made by the 'recursive' strategy.
+ multiple.py | 2 ++
+ 1 file changed, 2 insertions(+)
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ git push origin  main
+Username for 'https://github.com': bechirbendaya
+Password for 'https://bechirbendaya@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 278 bytes | 278.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bechirbendaya/rep2.git
+   7ee7ae2..94010cc  main -> main
+bechirbendaya1999@cloudshell:~/bechir2.git (my-project-99992022)$ 
